@@ -18,7 +18,7 @@ const handleSubmit = (e: FormEvent) => {
   onSearch(query);
 }
   return (
-    <form onSubmit={handleSubmit} className='flex items-center w-screen max-w-3xl'>
+    <form onSubmit={handleSubmit} className='flex items-center w-screen max-w-3xl mx-auto'>
       
       <input
         type='text'
