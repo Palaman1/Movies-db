@@ -18,7 +18,7 @@ const MovieSearch = () => {
       <SearchBar onSearch={handleSearch} />
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 mt-8">
         {movies.map((movie:any) => (
-             <MovieCard key={movie.id} title={movie.title} overview={movie.overview} posterPath={movie.poster_path} />  
+          <MovieCard key={movie.id} title={movie.title} overview={movie.overview} posterPath={movie.poster_path} original_language={movie.original_language} runtime={movie.runtime} vote_average={movie.vote_average} release_date={movie.release_date} />
         ))}
       </div>
     </div>
